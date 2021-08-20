@@ -87,23 +87,22 @@
             <div class="container">
                 <div class="title py-5">
                     <h2>User</h2>
-                    <h4>/user_balance: Shows the bot balance of the user.</h4>
-                    <h4>/user_balance: Shows the bot balance of the user.</h4>
-                    <h4>/user_balance: Shows the bot balance of the user.</h4>
-                    <h4>/user_balance: Shows the bot balance of the user.</h4>
-                    <h4>/user_balance: Shows the bot balance of the user.</h4>
-                    <h2>User</h2>
-                    <h4>/user_balance: Shows the bot balance of the user.</h4>
-                    <h4>/user_balance: Shows the bot balance of the user.</h4>
-                    <h4>/user_balance: Shows the bot balance of the user.</h4>
-                    <h4>/user_balance: Shows the bot balance of the user.</h4>
-                    <h4>/user_balance: Shows the bot balance of the user.</h4>
-                    <h2>User</h2>
-                    <h4>/user_balance: Shows the bot balance of the user.</h4>
-                    <h4>/user_balance: Shows the bot balance of the user.</h4>
-                    <h4>/user_balance: Shows the bot balance of the user.</h4>
-                    <h4>/user_balance: Shows the bot balance of the user.</h4>
-                    <h4>/user_balance: Shows the bot balance of the user.</h4>
+                    <h4><b>/user_balance:</b> Shows the bot balance of the user.</h4>
+                    <h4><b>/user_deposit:</b> Prompts the user with account number and memo to deposit TNBC.</h4>
+                    <h4><b>/user_withdraw amount: AMOUNT:</b> Lets the user withdraw TNBC to their withdrawal address.</h4>
+                    <h4><b>/user_setwithdrawaladdress account_number: ACCOUNT_NUMBER</b> Lets the user set/ update the withdrawal address.</h4>
+                    
+                    <h2>Escrow</h2>
+                    <h4><b>/escrow_add amount: AMOUNT user: DISCORD_USER:</b> Lets user create escrow ticket.</h4>
+                    <h4><b>/escrow_status escrow_id: ESCROW_ID:</b> View the status of the escrow with the escrow id.</h4>
+                    <h4><b>/escrow_all:</b> Lists all the active escrows of the particular user.</h4>
+                    <h4><b>/escrow_release escrow_id: ESCROW_ID:</b> Lets the initiator release the escrow fund.</h4>
+                    <h4><b>/escrow_cancel escrow_id: ESCROW_ID:</b> Lets the initiator or successor to cancel the escrow. (Both users will need to use the command to cancel the escrow)</h4>
+                    <h4><b>/escrow_dispute escrow_id: ESCROW_ID:</b> Creates a dispute with the escrow id.</h4>
+
+                    <h2>Agent</h2>
+                    <h4><b>/agent_release escrow_id: ESCROW_ID user:</b> USER: Lets the agent release the fund to particular user.</h4>
+                    <h4><b>/agent_cancel escrow_id: ESCROW_ID:</b> Lets the agent cancel the escrow.</h4>
                 </div>
             </div>
         </div>
