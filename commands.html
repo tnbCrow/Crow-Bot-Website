@@ -6,7 +6,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="./favicon.ico">
     <link rel="icon" type="image/png" href="./favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>tnbCrow Discord Bot | Getting Started</title>
+    <title>tnbCrow Discord Bot | Commands</title>
     <meta name="description" content="tnbCrow Discord Bot usage guide. List of commands to get you started in tnbCrow discord server.">
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
     <!--     Fonts and icons     -->
@@ -18,7 +18,7 @@
     for(h=0;h<i.length;h++)g(a,i[h]);var j="set set_once union unset remove delete".split(" ");a.get_group=function(){function b(c){d[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));a.push([e,call2])}}for(var d={},e=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<j.length;c++)b(j[c]);return d};b._i.push([e,f,c])};b.__SV=1.2;e=f.createElement("script");e.type="text/javascript";e.async=!0;e.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
     MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";g=f.getElementsByTagName("script")[0];g.parentNode.insertBefore(e,g)}})(document,window.mixpanel||[]);
     mixpanel.init("91666f273197a6d93342e87e0d8bca6d");
-    mixpanel.track('bot.tnbcrow.com website visit');
+    mixpanel.track('bot.tnbcrow.com command visit');
     </script>
 </head>
 
@@ -38,8 +38,8 @@
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto">
                     <div class="brand text-center">
-                        <h1>Getting Started</h1>
-                        <h3 class="title text-center">Trade TNBC P2P on tnbCrow discord server!</h3>
+                        <h1>Commands</h1>
+                        <h3 class="title text-center">Commands for tnbCrow discord bot</h3>
                     </div>
                 </div>
             </div>
@@ -47,53 +47,27 @@
     </div>
     <div class="main main-raised">
         <div class="container">
-             <div class="col py-5">
-              <!-- Tabs on Plain Card -->
-              <div class="card card-nav-tabs card-plain">
-                <div class="card-header card-header-success">
-                  <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
-                  <div class="nav-tabs-navigation">
-                    <div class="nav-tabs-wrapper">
-                      <ul class="nav nav-tabs" data-tabs="tabs">
-                        <li class="nav-item">
-                          <a class="nav-link active" href="#buyer" data-toggle="tab">I want to Buy TNBC</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#seller" data-toggle="tab">I want to Sell TNBC</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body ">
-                  <div class="tab-content">
-                    <div class="tab-pane active" id="buyer">
-                        <h4><li>Join tnbCrow discord server. <a href="https://chat.tnbcrow.com/">Invite Link</a></li></h4>
-                        <h4><li>Find your trade partner from <b>#trade</b> channel and make the trade deal.</li></h4>
-                        <h4><li>Ask the seller to create an escrow.</li></h4>
-                        <h4><li>Check the escrow using the command <b>/escrow_all</b></li></h4>
-                        <h4><li>Once verified, pay the seller with your agreed payment method.</li></h4>
-                        <h4><li>Once paid, ask the seller to release funds into your account.</li></h4>
-                        <h4><li>Use <b>/user_balance</b> to check your balance after escrow is completed.</li></h4>
-                    </div>
-                    <div class="tab-pane" id="seller">
-                        <h4><li>Join tnbCrow discord server. <a href="https://chat.tnbcrow.com/">Invite Link</a></li></h4>
-                        <h4><li>Find your trade partner from <b>#trade</b> channel and make the trade deal.</li></h4>
-                        <h4><li>Create an escrow using the command <b>/escrow_new amount: AMOUNT user: DISCORD_USER</b>.</li></h4>
-                        <h4><li>Ask the buyer to verify the escrow using command <b>/escrow_all</b></li></h4>
-                        <h4><li>Once verified, ask the buyer to send the payment.</li></h4>
-                        <h4><li>Once the payment is received, release funds using the command <b>/escrow_release escrow_id: ESCROW_ID</b>.</li></h4>
-                        <h4><li>Use <b>/user_balance</b> to check your balance after escrow is completed.</li></h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Tabs on plain Card -->
-                 <div class="text-center">
-                     <a href="commands.html">Command List</a>
-                 </div>
+            <div class="title py-5">                
+                <h2>Price</h2>
+                <h4><b>/rate:</b> Check the last OTC trade rate.</h4>
+                <h4><b>/stats:</b> Check TNBC price statistics.</h4>
+                <h4><b>/trades:</b> Check the recent OTC trades.</h4>
+                
+                <h2>User</h2>
+                <h4><b>/user_balance:</b> Check your crow bot balance.</h4>
+                <h4><b>/user_deposit:</b> Deposit TNBC into your crow bot.</h4>
+                <h4><b>/user_setwithdrawaladdress account_number: ACCOUNT_NUMBER:</b> Set your TNBC withdrawal account number.</h4>
+                <h4><b>/user_withdraw amount: AMOUNT:</b> Withdraw TNBC into your withdrawal account number.</h4>
+                
+                <h2>Escrow</h2>
+                <h4><b>/escrow_new amount: AMOUNT user: DISCORD_USER:</b> Initiate the escrow with another user.</h4>
+                <h4><b>/escrow_status escrow_id: ESCROW_ID:</b> Check the status of the particular escrow.</h4>
+                <h4><b>/escrow_all:</b> List all your active escrows.</h4>
+                <h4><b>/escrow_release escrow_id: ESCROW_ID:</b> Release TNBC once the transaction is completed.</h4>
+                <h4><b>/escrow_cancel escrow_id: ESCROW_ID:</b> Cancel escrow if needed to.</h4>
+                <h4><b>/escrow_dispute escrow_id: ESCROW_ID:</b> Raise a dispute and invite the agent to solve the issue.</h4>
+            </div>
         </div>
-    </div>
     </div>
     <footer class="footer footer-default">
         <div class="container">
