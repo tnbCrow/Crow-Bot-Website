@@ -47,10 +47,12 @@
     </div>
     <div class="main main-raised">
         <div class="container">
-             <div class="col py-5">
+             <div class="col pt-3">
+                 
+                <h3 class="py-2">Your role?</h3>
               <!-- Tabs on Plain Card -->
               <div class="card card-nav-tabs card-plain">
-                <div class="card-header card-header-success d-flex justify-content-center">
+                <div class="card-header card-header-success">
                   <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
                   <div class="nav-tabs-navigation">
                     <div class="nav-tabs-wrapper">
@@ -89,11 +91,17 @@
                 </div>
               </div>
               <!-- End Tabs on plain Card -->
-                 <div class="text-center">
-                     <a href="commands.html">Command List</a>
-                 </div>
+            </div>
+            <div class="col pb-5">                
+                <h3>How does escrow work on the crow bot?</h3>
+                <h4><li>Buyer and Seller agree to terms and payment method.</li></h4>
+                <h4><li>Seller creates escrow ticket. Crow bot locks TNBC from seller's crow bot account.</li></h4>
+                <h4><li>Buyer verifies the ticket creation. Uses command /escrows to list all the active escrows.</li></h4>
+                <h4><li>Buyer sends the payment to seller.</li></h4>
+                <h4><li>Seller receives the payment and releases the fund to buyer. If not released, the buyer will raise a dispute using /escrow_dispute command.</li></h4>
+                <h4><li>Crow bot transfers TNBC from seller to buyer's account.</li></h4>
+            </div>
         </div>
-    </div>
     </div>
     <footer class="footer footer-default">
         <div class="container">
