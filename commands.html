@@ -23,16 +23,40 @@
 </head>
 
 <body class="profile-page sidebar-collapse">
-    <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="50"
-        id="sectionsNav">
-        <div class="container">
-            <div class="navbar-translate">
-                <a class="navbar-brand" href="index.html"><img
-                        src="./assets/img/logo_wordmark.png">
-                </a>
-             </div>
-         </div>
+    <!--navbar -->
+    <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="50">
+      <div class="container">
+        <div class="navbar-translate">
+          <a class="navbar-brand" href="index.html"><img src="./assets/img/logo_wordmark.png"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="active nav-item">
+              <a href="commands.html" class="nav-link">
+                Commands
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="guide.html" class="nav-link">
+                Guide
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:;" class="nav-link">
+                About
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+    <!--end navbar -->
     <div class="page-header header-filter clear-filter purple-filter" data-parallax="true">
         <div class="container">
             <div class="row">
@@ -48,24 +72,24 @@
     <div class="main main-raised">
         <div class="container">
             <div class="title py-5">                
-                <h2>Price</h2>
+                <h3>Price</h3>
                 <h4><b>/rate:</b> Check the last OTC trade rate.</h4>
                 <h4><b>/stats:</b> Check TNBC price statistics.</h4>
                 <h4><b>/trades:</b> Check the recent OTC trades.</h4>
                 
-                <h2>User</h2>
-                <h4><b>/user_balance:</b> Check your crow bot balance.</h4>
-                <h4><b>/user_deposit:</b> Deposit TNBC into your crow bot.</h4>
-                <h4><b>/user_setwithdrawaladdress account_number: ACCOUNT_NUMBER:</b> Set your TNBC withdrawal account number.</h4>
-                <h4><b>/user_withdraw amount: AMOUNT:</b> Withdraw TNBC into your withdrawal account number.</h4>
+                <h3>User</h3>
+                <h4><b>/user balance:</b> Check your crow bot balance.</h4>
+                <h4><b>/user deposit:</b> Deposit TNBC into your crow bot.</h4>
+                <h4><b>/user set_withdrawal_address account_number: ACCOUNT_NUMBER:</b> Set your TNBC withdrawal account number.</h4>
+                <h4><b>/user withdraw amount: AMOUNT:</b> Withdraw TNBC into your withdrawal account number.</h4>
                 
-                <h2>Escrow</h2>
-                <h4><b>/escrow_new amount: AMOUNT user: DISCORD_USER:</b> Initiate the escrow with another user.</h4>
-                <h4><b>/escrow_status escrow_id: ESCROW_ID:</b> Check the status of the particular escrow.</h4>
-                <h4><b>/escrow_all:</b> List all your active escrows.</h4>
-                <h4><b>/escrow_release escrow_id: ESCROW_ID:</b> Release TNBC once the transaction is completed.</h4>
-                <h4><b>/escrow_cancel escrow_id: ESCROW_ID:</b> Cancel escrow if needed to.</h4>
-                <h4><b>/escrow_dispute escrow_id: ESCROW_ID:</b> Raise a dispute and invite the agent to solve the issue.</h4>
+                <h3>Escrow</h3>
+                <h4><b>/escrow new amount: AMOUNT user: DISCORD_USER:</b> Initiate the escrow with another user.</h4>
+                <h4><b>/escrow status escrow_id: ESCROW_ID:</b> Check the status of the particular escrow.</h4>
+                <h4><b>/escrow all:</b> List all your active escrows.</h4>
+                <h4><b>/escrow release escrow_id: ESCROW_ID:</b> Release TNBC once the transaction is completed.</h4>
+                <h4><b>/escrow cancel escrow_id: ESCROW_ID:</b> Cancel escrow if needed to.</h4>
+                <h4><b>/escrow dispute escrow_id: ESCROW_ID:</b> Raise a dispute and invite the agent to solve the issue.</h4>
             </div>
         </div>
     </div>
@@ -87,7 +111,6 @@
                             <svg data-testid="Icon__svg" class="mdi-icon " width="28" height="28" fill="currentColor" viewBox="0 0 24 24"><path d="M22,24L16.75,19L17.38,21H4.5A2.5,2.5 0 0,1 2,18.5V3.5A2.5,2.5 0 0,1 4.5,1H19.5A2.5,2.5 0 0,1 22,3.5V24M12,6.8C9.32,6.8 7.44,7.95 7.44,7.95C8.47,7.03 10.27,6.5 10.27,6.5L10.1,6.33C8.41,6.36 6.88,7.53 6.88,7.53C5.16,11.12 5.27,14.22 5.27,14.22C6.67,16.03 8.75,15.9 8.75,15.9L9.46,15C8.21,14.73 7.42,13.62 7.42,13.62C7.42,13.62 9.3,14.9 12,14.9C14.7,14.9 16.58,13.62 16.58,13.62C16.58,13.62 15.79,14.73 14.54,15L15.25,15.9C15.25,15.9 17.33,16.03 18.73,14.22C18.73,14.22 18.84,11.12 17.12,7.53C17.12,7.53 15.59,6.36 13.9,6.33L13.73,6.5C13.73,6.5 15.53,7.03 16.56,7.95C16.56,7.95 14.68,6.8 12,6.8M9.93,10.59C10.58,10.59 11.11,11.16 11.1,11.86C11.1,12.55 10.58,13.13 9.93,13.13C9.29,13.13 8.77,12.55 8.77,11.86C8.77,11.16 9.28,10.59 9.93,10.59M14.1,10.59C14.75,10.59 15.27,11.16 15.27,11.86C15.27,12.55 14.75,13.13 14.1,13.13C13.46,13.13 12.94,12.55 12.94,11.86C12.94,11.16 13.45,10.59 14.1,10.59Z"></path></svg>
                         </a>
                     </li>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" rel="tooltip" title="" data-placement="bottom"
                             href="https://www.instagram.com/tnbcrow/" target="_blank"
@@ -107,4 +130,5 @@
     <script src="./assets/js/plugins/moment.min.js"></script>
     <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
     <script src="./assets/js/material-kit.js?v=2.0.7" type="text/javascript"></script>
+  </body>
 </html>
