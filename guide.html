@@ -13,13 +13,6 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" /> 
     <!-- CSS Files -->
     <link href="./assets/css/material-kit.css?v=2.0.7" rel="stylesheet" />
-    <script type="text/javascript">
-    (function(f,b){if(!b.__SV){var e,g,i,h;window.mixpanel=b;b._i=[];b.init=function(e,f,c){function g(a,d){var b=d.split(".");2==b.length&&(a=a[b[0]],d=b[1]);a[d]=function(){a.push([d].concat(Array.prototype.slice.call(arguments,0)))}}var a=b;"undefined"!==typeof c?a=b[c]=[]:c="mixpanel";a.people=a.people||[];a.toString=function(a){var d="mixpanel";"mixpanel"!==c&&(d+="."+c);a||(d+=" (stub)");return d};a.people.toString=function(){return a.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
-    for(h=0;h<i.length;h++)g(a,i[h]);var j="set set_once union unset remove delete".split(" ");a.get_group=function(){function b(c){d[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));a.push([e,call2])}}for(var d={},e=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<j.length;c++)b(j[c]);return d};b._i.push([e,f,c])};b.__SV=1.2;e=f.createElement("script");e.type="text/javascript";e.async=!0;e.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
-    MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";g=f.getElementsByTagName("script")[0];g.parentNode.insertBefore(e,g)}})(document,window.mixpanel||[]);
-    mixpanel.init("91666f273197a6d93342e87e0d8bca6d");
-    mixpanel.track('bot.tnbcrow.com command visit');
-    </script>
 </head>
 
 <body class="profile-page sidebar-collapse">
@@ -82,7 +75,7 @@
 		  <h3 id="deposit-tnbc">How to deposit TNBC?</h3>
 		  <h4><li>To deposit, you'll need to have a wallet installed (Official or Keysign) and have some TNBC in that wallet.</li></h4>
 		  <h4><li>Navigate to tnbCrow discord server.</li></h4>
-		  <h4><li>Use <b>/user deposit</b> command. You'll be prompted with account number and MEMO.</li></h4>
+		  <h4><li>Use <b>/deposit tnbc</b> command. You'll be prompted with account number and MEMO.</li></h4>
 		  <img src="assets/img/deposit-embed.PNG" alt="User Deposit" class="img-fluid">
 		  <h4><li>Send TNBC to the account number <b>with MEMO</b>. Warning: MEMO is required, or you might lose your coins.</li></h4>
 		  <div class="row">
@@ -103,8 +96,8 @@
 		  <br>
 
 		  <h3 id="withdraw-tnbc">How to withdraw TNBC?</h3>
-		  <h4><li>Set withdrawal address if you have not already with the command <b>/user set_withdrawal_address account_number: ACCOUNT_NUMBER</b></li></h4>
-		  <h4><li>Use <b>/user withdraw amount: AMOUNT</b> command to withdraw amount into your withdrawal address.</li></h4>
+		  <h4><li>Set withdrawal address if you have not already with the command <b>/set_withdrawal_address tnbc account_number: ACCOUNT_NUMBER</b></li></h4>
+		  <h4><li>Use <b>/withdraw tnbc amount: AMOUNT</b> command to withdraw amount into your withdrawal address.</li></h4>
 		  <h5>(Note: Network fees will be deducted automatically from your account with each withdrawal)</h5>
 		  <br>
 
@@ -115,7 +108,7 @@
 		  <br>
 
 		  <h3 id="handle-disputes">How to handle disputes in trade?</h3>
-		  <h4><li>Use the command <b>/dispute escrow_id: ESCROW_ID</b> to mark the escrow as disputed.</li></h4>
+		  <h4><li>Use the command <b>/escrow dispute escrow_id: ESCROW_ID</b> to mark the escrow as disputed.</li></h4>
 		  <h4><li>One of the tnbcrow support member will create a private chat within the tnbcrow discord server.</li></h4>
 		  <h4><li>Have your say in the private group and the support member will resolve the dispute checking the proofs from the both side.</li></h4>
 		  <h5><b>Warning: Agent will never direct message you.</b></h5>

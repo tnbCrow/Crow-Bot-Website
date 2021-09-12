@@ -13,13 +13,6 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" /> 
     <!-- CSS Files -->
     <link href="./assets/css/material-kit.css?v=2.0.7" rel="stylesheet" />
-    <script type="text/javascript">
-    (function(f,b){if(!b.__SV){var e,g,i,h;window.mixpanel=b;b._i=[];b.init=function(e,f,c){function g(a,d){var b=d.split(".");2==b.length&&(a=a[b[0]],d=b[1]);a[d]=function(){a.push([d].concat(Array.prototype.slice.call(arguments,0)))}}var a=b;"undefined"!==typeof c?a=b[c]=[]:c="mixpanel";a.people=a.people||[];a.toString=function(a){var d="mixpanel";"mixpanel"!==c&&(d+="."+c);a||(d+=" (stub)");return d};a.people.toString=function(){return a.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
-    for(h=0;h<i.length;h++)g(a,i[h]);var j="set set_once union unset remove delete".split(" ");a.get_group=function(){function b(c){d[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));a.push([e,call2])}}for(var d={},e=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<j.length;c++)b(j[c]);return d};b._i.push([e,f,c])};b.__SV=1.2;e=f.createElement("script");e.type="text/javascript";e.async=!0;e.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
-    MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";g=f.getElementsByTagName("script")[0];g.parentNode.insertBefore(e,g)}})(document,window.mixpanel||[]);
-    mixpanel.init("91666f273197a6d93342e87e0d8bca6d");
-    mixpanel.track('bot.tnbcrow.com website visit');
-    </script>
 </head>
 
 <body class="profile-page sidebar-collapse">
@@ -97,19 +90,21 @@
                         <h4><li>Join tnbCrow discord server. <a href="https://chat.tnbcrow.com/">Invite Link</a></li></h4>
                         <h4><li>Find your trade partner from <b>#trade</b> channel and make the trade deal.</li></h4>
                         <h4><li>Ask the seller to create an escrow.</li></h4>
-                        <h4><li>Check the escrow using the command <b>/escrow_all</b></li></h4>
+                        <h4><li>Check the escrow using the command <b>/escrow all</b></li></h4>
                         <h4><li>Once verified, pay the seller with your agreed payment method.</li></h4>
+						<h5><b>Warning: Never send payment before verifying that the escrow exists.</b></h5>
                         <h4><li>Once paid, ask the seller to release funds into your account.</li></h4>
-                        <h4><li>Use <b>/user balance</b> to check your balance after escrow is completed.</li></h4>
+                        <h4><li>Use <b>/balance</b> to check your balance after escrow is completed.</li></h4>
                     </div>
                     <div class="tab-pane" id="seller">
                         <h4><li>Join tnbCrow discord server. <a href="https://chat.tnbcrow.com/">Invite Link</a></li></h4>
                         <h4><li>Find your trade partner from <b>#trade</b> channel and make the trade deal.</li></h4>
-                        <h4><li>Create an escrow using the command <b>/escrow_new amount: AMOUNT user: DISCORD_USER</b>.</li></h4>
-                        <h4><li>Ask the buyer to verify the escrow using command <b>/escrow_all</b></li></h4>
+                        <h4><li>Create an escrow using the command <b>/escrow new amount: AMOUNT user: DISCORD_USER</b>.</li></h4>
+                        <h4><li>Ask the buyer to verify the escrow using command <b>/escrow all</b></li></h4>
                         <h4><li>Once verified, ask the buyer to send the payment.</li></h4>
-                        <h4><li>Once the payment is received, release funds using the command <b>/escrow_release escrow_id: ESCROW_ID</b>.</li></h4>
-                        <h4><li>Use <b>/user balance</b> to check your balance after escrow is completed.</li></h4>
+                        <h4><li>Once the payment is received, release funds using the command <b>/escrow release escrow_id: ESCROW_ID</b>.</li></h4>						
+						<h5><b>Warning: Never release escrow before verifying that you have received payment.</b></h5>
+                        <h4><li>Use <b>/balance</b> to check your balance after escrow is completed.</li></h4>
                     </div>
                   </div>
                 </div>
@@ -122,7 +117,7 @@
                 <h4><li>Seller creates escrow ticket. Crow bot locks TNBC from seller's crow bot account.</li></h4>
                 <h4><li>Buyer verifies the ticket creation. Uses command /escrows to list all the active escrows.</li></h4>
                 <h4><li>Buyer sends the payment to seller.</li></h4>
-                <h4><li>Seller receives the payment and releases the fund to buyer. If not released, the buyer will raise a dispute using /escrow_dispute command.</li></h4>
+                <h4><li>Seller receives the payment and releases the fund to buyer. If not released, the buyer will raise a dispute using /escrow dispute command.</li></h4>
                 <h4><li>Crow bot transfers TNBC from seller to buyer's account.</li></h4>
             </div>
         </div>
