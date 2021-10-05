@@ -3,6 +3,7 @@ const offersRow = document.getElementById('offers-row');
 fetch('https://tnbcrow-bot.commandokoala.com/trade-offers?format=json').then(response => response.json()).then(offers => {
     console.log(offers);
     if(offers.length > 0) {
+        offersRow.innerHTML = "";
         offers.forEach(offer => {
             offersRow.innerHTML += `<div class="col-md-4 pt-2 d-flex align-items-stretch">
             <div class="card">
@@ -19,6 +20,8 @@ fetch('https://tnbcrow-bot.commandokoala.com/trade-offers?format=json').then(res
             </div>
         </div>`
         })
+    } else {
+        offersRow.innerHTML = '<div class="my-5">There are no offers made on the tnbCrow discord server!</div>'
     }
 }).catch(error => {
     console.error(error);
