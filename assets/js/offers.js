@@ -30,13 +30,12 @@ function DisplayList (offers, wrapper, rows_per_page, page) {
                 <div class="card-header card-header-text card-header-primary">
                     <div class="card-text">
                         <h4 class="card-title">${offer.discord_username}</h4>
-                        <h6 class="float-right">${new Date(offer.created_at).toLocaleString()}</h6>
                     </div>
                 </div>
                 <div class="card-body">
-                    ${offer.message}
-                    <div class="float-right font-weight-bold">Updated at ${new Date(offer.updated_at).toLocaleString()}</div>
+                    <h5>${offer.message}</h5>
                 </div>
+				<div class="card-footer">Created at ${new Date(offer.created_at).toLocaleString()}</div>
             </div>
         </div>`;
 		wrapper.innerHTML += offer_element;
