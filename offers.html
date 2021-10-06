@@ -6,13 +6,14 @@
     <link rel="apple-touch-icon" sizes="76x76" href="./favicon.ico">
     <link rel="icon" type="image/png" href="./favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>tnbCrow Discord Bot | Getting Started</title>
-    <meta name="description" content="tnbCrow Discord Bot usage guide. List of commands to get you started in tnbCrow discord server.">
+    <title>tnbCrow Discord Bot | Offers</title>
+    <meta name="description" content="tnbCrow Discord Bot usage guide. List of offers made in the tnbCrow discord server.">
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" /> 
     <!-- CSS Files -->
     <link href="./assets/css/material-kit.css?v=2.0.7" rel="stylesheet" />
+    <link href="./assets/css/custom.min.css" rel="stylesheet" />
 </head>
 
 <body class="profile-page sidebar-collapse">
@@ -40,14 +41,14 @@
                 Guide
               </a>
             </li>
-            <li class="nav-item">
+            <li class="active nav-item">
               <a href="offers.html" class="nav-link">
                 Offers
               </a>
             </li>
             <li class="nav-item">
               <a href="javascript:;" class="nav-link">
-                FAQ
+                About
               </a>
             </li>
           </ul>
@@ -60,8 +61,8 @@
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto">
                     <div class="brand text-center">
-                        <h1>Getting Started</h1>
-                        <h3 class="title text-center">Trade TNBC P2P on tnbCrow discord server!</h3>
+                        <h1>Offers</h1>
+                        <h3 class="title text-center">Offers made in the tnbCrow discord server</h3>
                     </div>
                 </div>
             </div>
@@ -69,66 +70,14 @@
     </div>
     <div class="main main-raised">
         <div class="container">
-             <div class="col pt-3">
-                 
-                <h3 class="py-2">Your role?</h3>
-              <!-- Tabs on Plain Card -->
-              <div class="card card-nav-tabs card-plain">
-                <div class="card-header card-header-success">
-                  <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
-                  <div class="nav-tabs-navigation">
-                    <div class="nav-tabs-wrapper">
-                      <ul class="nav nav-tabs" data-tabs="tabs">
-                        <li class="nav-item">
-                          <a class="nav-link active" href="#buyer" data-toggle="tab">I want to Buy TNBC</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#seller" data-toggle="tab">I want to Sell TNBC</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body ">
-                  <div class="tab-content">
-                    <div class="tab-pane active" id="buyer">
-                        <h4><li>Join tnbCrow discord server. <a href="https://chat.tnbcrow.com/">Invite Link</a></li></h4>
-                        <h4><li>Find your trade partner from <b>#trade</b> channel and make the trade deal.</li></h4>
-                        <h4><li>Ask the seller to create an escrow.</li></h4>
-                        <h4><li>Check the escrow using the command <b>/escrow all</b></li></h4>
-                        <h4><li>Once verified, pay the seller with your agreed payment method.</li></h4>
-						<h5><b>Warning: Never send payment before verifying that the escrow exists.</b></h5>
-                        <h4><li>Once paid, ask the seller to release funds into your account.</li></h4>
-						<h5>Ran into disputes? Use <b>/escrow dispute escrow_id: ESCROW_ID</b> command and tnbCrow staff will create a private channel within tnbcrow server to resolve the issue.</h5>
-                        <h4><li>Use <b>/balance</b> to check your new balance.</li></h4>
-                    </div>
-                    <div class="tab-pane" id="seller">
-                        <h4><li>Join tnbCrow discord server. <a href="https://chat.tnbcrow.com/">Invite Link</a></li></h4>
-                        <h4><li>Find your trade partner from <b>#trade</b> channel and make the trade deal.</li></h4>
-                        <h4><li>Deposit tnbc into your account using <b>/deposit tnbc</b> command.</li></h4>
-                        <h4><li>Create an escrow using the command <b>/escrow new amount: AMOUNT user: DISCORD_USER</b>.</li></h4>
-                        <h4><li>Ask the buyer to verify the escrow using command <b>/escrow all</b></li></h4>
-                        <h4><li>Once verified, ask the buyer to send the payment.</li></h4>
-                        <h4><li>Once the payment is received, release funds using the command <b>/escrow release escrow_id: ESCROW_ID</b>.</li></h4>						
-						<h5><b>Warning: Never release escrow before verifying that you have received payment.</b></h5>
-						<h5>Ran into disputes? Use <b>/escrow dispute escrow_id: ESCROW_ID</b> command and tnbCrow staff will create a private channel within tnbcrow server to resolve the issue.</h5>
-                        <h4><li>Use <b>/balance</b> to check your new balance.</li></h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- End Tabs on plain Card -->
-            </div>
-            <div class="col pb-5">                
-                <h3>How does escrow work on the crow bot?</h3>
-                <h4><li>Buyer and Seller agree to terms and payment method.</li></h4>
-                <h4><li>Seller creates escrow ticket. Crow bot locks TNBC from seller's crow bot account.</li></h4>
-                <h4><li>Buyer verifies the ticket creation. Uses command /escrows to list all the active escrows.</li></h4>
-                <h4><li>Buyer sends the payment to seller.</li></h4>
-                <h4><li>Seller receives the payment and releases the fund to buyer. If not released, the buyer will raise a dispute using /escrow dispute command.</li></h4>
-                <h4><li>Crow bot transfers TNBC from seller to buyer's account.</li></h4>
+            <div class="row justify-content-md-center" id="offers-row">
+              <div class="spinner-grow text-primary my-5"></div>
             </div>
         </div>
+        <nav aria-label="...">
+          <ul class="pagination justify-content-center pb-3" id="pagination">
+          </ul>
+        </nav>
     </div>
     <footer class="footer footer-default">
         <div class="container">
@@ -160,6 +109,7 @@
             </nav>
         </div>
     </footer>
+    <script src="./assets/js/offers.js" type="text/javascript"></script>
     <!--   Core JS Files   -->
     <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
     <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
